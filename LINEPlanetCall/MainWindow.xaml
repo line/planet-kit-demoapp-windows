@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright 2024 LINE Plus Corporation
+
+LINE Plus Corporation licenses this file to you under the Apache License,
+version 2.0 (the "License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at:
+
+  https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+-->
+<Window
+    x:Class="LINEPlanetCall.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LINEPlanetCall"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="LINE Planet Call"
+    Closed="closedMainWindow"
+    SizeChanged="sizeChangedMainWindow">
+
+    <Page x:Name="mainWindowPage">
+        <StackPanel>
+            <StackPanel Background="#3F3F3F" Visibility="{x:Bind Path=mainWindowViewModel.callVerified, Mode=OneWay}" CornerRadius="3">
+                <Grid Height="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="46" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="{x:Bind Path=mainWindowViewModel.callPeerId, Mode=OneWay}" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="14" Foreground="White" FontWeight="SemiBold" Margin="10 5 0 0" />
+                        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="13" Foreground="#777777" Margin="10 0 0 5" Visibility="{x:Bind Path=mainWindowViewModel.incomingAudioCall, Mode=OneWay}" x:Uid="lp_demoapp_1to1_noti_voice" />
+                        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="13" Foreground="#777777" Margin="10 0 0 5" Visibility="{x:Bind Path=mainWindowViewModel.incomingVideoCall, Mode=OneWay}" x:Uid="lp_demoapp_1to1_noti_video" />
+                    </Grid>
+
+                    <Button Grid.Column="1" Width="36" Height="36" Background="#FF334B" Foreground="#3F3F3F" CornerRadius="18" ToolTipService.ToolTip="Decline" IsTabStop="False" Click="endCall">
+                        <Button.RenderTransform>
+                            <RotateTransform Angle="120" CenterX="18" CenterY="18"/>
+                        </Button.RenderTransform>
+                        <Button.Resources>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#3F3F3F" />
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#F31B35"/>
+
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#3F3F3F" />
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#FF334B"/>
+                        </Button.Resources>
+                        <Viewbox Width="13" Height="13">
+                            <SymbolIcon Symbol="Phone" />
+                        </Viewbox>
+                    </Button>
+                    <Button Grid.Column="2" Width="36" Height="36" Background="#06C755" Foreground="#3F3F3F" CornerRadius="18" ToolTipService.ToolTip="Accept" IsTabStop="False" Click="acceptCall">
+                        <Button.Resources>
+                            <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="#3F3F3F" />
+                            <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#1FC04F"/>
+
+                            <SolidColorBrush x:Key="ButtonForegroundPressed" Color="#3F3F3F" />
+                            <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#06C755"/>
+                        </Button.Resources>
+                        <Viewbox Width="13" Height="13">
+                            <SymbolIcon Symbol="Phone"/>
+                        </Viewbox>
+                    </Button>
+                </Grid>
+            </StackPanel>
+            <Frame x:Name="frame" Height="{x:Bind Path=mainWindowViewModel.frameHeight, Mode=OneWay}" />
+        </StackPanel>
+    </Page>
+</Window>
