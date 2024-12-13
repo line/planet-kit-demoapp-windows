@@ -59,6 +59,10 @@ Before getting started with LINE Planet Call, do the following:
  - Click **Start** menu on your taskbar.
  - Click **All apps** at the top right of the **Start** menu.
  - Locate "LINE Planet Call" in the list and click to launch it.
+ 
+## Limitations
+
+In LINE Planet Call, each call is limited to a maximum duration of five minutes. After five minutes, the call will automatically end with the disconnect reason `PLNK_DISCONNECT_REASON_MAX_CALL_TIME_EXCEEDED`.
 
 ## Issues and inquiries
 
@@ -67,3 +71,10 @@ Please file any issues or inquiries you have to our representative or [dl\_plane
 ## FAQ
 
 You can find answers to our frequently asked questions in the [FAQ](https://docs.lineplanet.me/help/faq) section.
+
+## License
+LINE Planet Call is licensed under a [Creative Commons License](https://creativecommons.org/public-domain/cc0/). Commercial and non-commercial use are permitted in compliance with the License.
+
+See [LICENSE.txt](./LICENSE.txt) for more details about licensing.
+
+In addition, LINE Planet Call includes or depends upon several third-party software packages, either in whole or in part. Each third-party software package is provided under its own license.
