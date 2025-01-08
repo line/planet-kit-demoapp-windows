@@ -1,0 +1,6 @@
+[submodule "planet-kit-windows"]
+	path = planet-kit-windows
+	url = https://github.com/line/planet-kit-windows.git
+[submodule "libyuv"]
+	path = libyuv
+	url = https://chromium.googlesource.com/libyuv/libyuv
