@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\compare.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\compare_common.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\compare_gcc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\compare_msa.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\compare_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\convert_argb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\convert.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\convert_from_argb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\convert_from.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\convert_jpeg.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\convert_to_argb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\convert_to_i420.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\cpu_id.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\mjpeg_decoder.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\mjpeg_validate.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\planar_functions.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\rotate_any.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\rotate_argb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\rotate.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\rotate_common.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\rotate_gcc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\rotate_lsx.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\rotate_msa.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\rotate_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\row_any.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\row_common.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\row_gcc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\row_lasx.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\row_lsx.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\row_msa.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\row_rvv.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\row_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_any.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_argb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_common.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_gcc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_lsx.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_msa.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_rgb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_rvv.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_uv.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\scale_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="..\libyuv-vs-project\yuv_common_objects.dir\$(Configuration)\video_common.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{AB4591D8-6BB9-3319-893E-DA1FBCB1696D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\libyuv\CMakeLists.txt" />
+  </ItemGroup>
+</Project>

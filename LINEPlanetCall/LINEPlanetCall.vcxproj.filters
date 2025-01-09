@@ -1,0 +1,944 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xaml">
+      <Filter>MainWindow</Filter>
+    </Page>
+    <Page Include="AudioDevicePage.xaml">
+      <Filter>Audio Device Control</Filter>
+    </Page>
+    <Page Include="VerifiedVideoCallPage.xaml">
+      <Filter>Call\Basic call\VideoCall</Filter>
+    </Page>
+    <Page Include="VideoCallMyPage.xaml">
+      <Filter>Call\Basic call\VideoCall</Filter>
+    </Page>
+    <Page Include="VideoCallPeerPage.xaml">
+      <Filter>Call\Basic call\VideoCall</Filter>
+    </Page>
+    <Page Include="GroupCallCameraPreviewPage.xaml">
+      <Filter>GroupCall\GroupCallCameraPreview</Filter>
+    </Page>
+    <Page Include="AlertPage.xaml">
+      <Filter>MainPage</Filter>
+    </Page>
+    <Page Include="AudioCallMyPage.xaml">
+      <Filter>Call\Basic call\AudioCall</Filter>
+    </Page>
+    <Page Include="AudioCallPage.xaml">
+      <Filter>Call\Basic call\AudioCall</Filter>
+    </Page>
+    <Page Include="AudioCallPeerPage.xaml">
+      <Filter>Call\Basic call\AudioCall</Filter>
+    </Page>
+    <Page Include="CallPage.xaml">
+      <Filter>Call\Basic call</Filter>
+    </Page>
+    <Page Include="CallScenarioPage.xaml">
+      <Filter>Call</Filter>
+    </Page>
+    <Page Include="CameraDevicePage.xaml">
+      <Filter>Camera Device Control</Filter>
+    </Page>
+    <Page Include="GroupCallPage.xaml">
+      <Filter>GroupCall\Basic call</Filter>
+    </Page>
+    <Page Include="GroupCallRoomNamePage.xaml">
+      <Filter>GroupCall\Basic call</Filter>
+    </Page>
+    <Page Include="GroupCallScenarioPage.xaml">
+      <Filter>GroupCall</Filter>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Filter>MainPage</Filter>
+    </Page>
+    <Page Include="SettingsPage.xaml">
+      <Filter>MainPage</Filter>
+    </Page>
+    <Page Include="VideoCallPage.xaml">
+      <Filter>Call\Basic call\VideoCall</Filter>
+    </Page>
+    <Page Include="GroupCallParticipantPage.xaml">
+      <Filter>GroupCall\Basic call</Filter>
+    </Page>
+    <Page Include="AlertMessagePage.xaml">
+      <Filter>MainPage</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="MainWindow.idl" />
+    <Midl Include="models\CallService.idl">
+      <Filter>Call\CallService</Filter>
+    </Midl>
+    <Midl Include="models\AudioDeviceService.idl">
+      <Filter>Audio Device Control\AudioDeviceService</Filter>
+    </Midl>
+    <Midl Include="models\CameraDeviceService.idl">
+      <Filter>Camera Device Control\CameraDeviceService</Filter>
+    </Midl>
+    <Midl Include="models\SettingService.idl">
+      <Filter>MainPage\SettingService</Filter>
+    </Midl>
+    <Midl Include="models\GroupCallService.idl">
+      <Filter>GroupCall\GroupCallService</Filter>
+    </Midl>
+    <Midl Include="viewmodels\AudioDeviceViewModel.idl">
+      <Filter>Audio Device Control\AudioDeviceViewModel</Filter>
+    </Midl>
+    <Midl Include="models\CallMyMediaStatusService.idl">
+      <Filter>Call\CallMyMediaStatusService</Filter>
+    </Midl>
+    <Midl Include="viewmodels\CallMyViewModel.idl">
+      <Filter>Call\CallMyViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\CallPeerViewModel.idl">
+      <Filter>Call\CallPeerViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\CallViewModel.idl">
+      <Filter>Call\CallViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\VerifiedCallViewModel.idl">
+      <Filter>Call\VerifiedCallViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\CameraDeviceViewModel.idl">
+      <Filter>Camera Device Control\CameraDeviceViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\GroupCallCameraPreviewViewModel.idl">
+      <Filter>GroupCall\GroupCallCameraPreview\GroupCallCameraPreviewViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\GroupCallRoomNameViewModel.idl">
+      <Filter>GroupCall\Basic call\GroupCallRoomNameViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\GroupCallViewModel.idl">
+      <Filter>GroupCall\Basic call\GroupCallViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\SettingViewModel.idl">
+      <Filter>MainPage\SettingViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\MainWindowViewModel.idl">
+      <Filter>MainWindow\MainWindowViewModel</Filter>
+    </Midl>
+    <Midl Include="constants\AccountStatus.idl">
+      <Filter>Constants</Filter>
+    </Midl>
+    <Midl Include="constants\ConnectState.idl">
+      <Filter>Constants</Filter>
+    </Midl>
+    <Midl Include="constants\NotificationResult.idl">
+      <Filter>Constants</Filter>
+    </Midl>
+    <Midl Include="structs\ServerInfoData.idl">
+      <Filter>AppServerControl\ServerInfoData</Filter>
+    </Midl>
+    <Midl Include="structs\AppServerController.idl">
+      <Filter>AppServerControl</Filter>
+    </Midl>
+    <Midl Include="structs\AudioDevice.idl">
+      <Filter>Audio Device Control\AudioDevice</Filter>
+    </Midl>
+    <Midl Include="constants\PlanetKitAudioDeviceType.idl">
+      <Filter>Constants</Filter>
+    </Midl>
+    <Midl Include="constants\PlanetKitMediaType.idl">
+      <Filter>Constants</Filter>
+    </Midl>
+    <Midl Include="structs\CameraDevice.idl">
+      <Filter>Camera Device Control\CameraDevice</Filter>
+    </Midl>
+    <Midl Include="structs\UserInfo.idl">
+      <Filter>MainPage\UserInfo</Filter>
+    </Midl>
+    <Midl Include="models\GroupCallParticipantService.idl">
+      <Filter>GroupCall\GroupCallParticipantService</Filter>
+    </Midl>
+    <Midl Include="viewmodels\GroupCallParticipantListViewModel.idl">
+      <Filter>GroupCall\GroupCallParticipantListViewModel</Filter>
+    </Midl>
+    <Midl Include="viewmodels\GroupCallParticipantViewModel.idl">
+      <Filter>GroupCall\GroupCallParticipantViewModel</Filter>
+    </Midl>
+    <Midl Include="Constants\ConnectResult.idl">
+      <Filter>Constants</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="$(GeneratedFilesDir)module.g.cpp" />
+    <ClCompile Include="models\CallService.cpp">
+      <Filter>Call\CallService</Filter>
+    </ClCompile>
+    <ClCompile Include="models\AudioDeviceService.cpp">
+      <Filter>Audio Device Control\AudioDeviceService</Filter>
+    </ClCompile>
+    <ClCompile Include="models\CameraDeviceService.cpp">
+      <Filter>Camera Device Control\CameraDeviceService</Filter>
+    </ClCompile>
+    <ClCompile Include="models\SettingService.cpp">
+      <Filter>MainPage\SettingService</Filter>
+    </ClCompile>
+    <ClCompile Include="models\GroupCallService.cpp">
+      <Filter>GroupCall\GroupCallService</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\AudioDeviceViewModel.cpp">
+      <Filter>Audio Device Control\AudioDeviceViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="models\CallMyMediaStatusService.cpp">
+      <Filter>Call\CallMyMediaStatusService</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\CallMyViewModel.cpp">
+      <Filter>Call\CallMyViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\CallPeerViewModel.cpp">
+      <Filter>Call\CallPeerViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\CallViewModel.cpp">
+      <Filter>Call\CallViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\VerifiedCallViewModel.cpp">
+      <Filter>Call\VerifiedCallViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\CameraDeviceViewModel.cpp">
+      <Filter>Camera Device Control\CameraDeviceViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\GroupCallCameraPreviewViewModel.cpp">
+      <Filter>GroupCall\GroupCallCameraPreview\GroupCallCameraPreviewViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\GroupCallRoomNameViewModel.cpp">
+      <Filter>GroupCall\Basic call\GroupCallRoomNameViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\GroupCallViewModel.cpp">
+      <Filter>GroupCall\Basic call\GroupCallViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\SettingViewModel.cpp">
+      <Filter>MainPage\SettingViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\MainWindowViewModel.cpp">
+      <Filter>MainWindow\MainWindowViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="structs\ServerInfoData.cpp">
+      <Filter>AppServerControl\ServerInfoData</Filter>
+    </ClCompile>
+    <ClCompile Include="structs\AppServerController.cpp">
+      <Filter>AppServerControl</Filter>
+    </ClCompile>
+    <ClCompile Include="structs\AudioDevice.cpp">
+      <Filter>Audio Device Control\AudioDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="structs\CameraDevice.cpp">
+      <Filter>Camera Device Control\CameraDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="structs\UserInfo.cpp">
+      <Filter>MainPage\UserInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="listeners\AudioDeviceEventListener.cpp">
+      <Filter>Audio Device Control\AudioDeviceEventListener</Filter>
+    </ClCompile>
+    <ClCompile Include="listeners\CallEventListener.cpp">
+      <Filter>Call\CallService\CallEventListener</Filter>
+    </ClCompile>
+    <ClCompile Include="listeners\CameraDeviceListener.cpp">
+      <Filter>Camera Device Control\CameraDeviceListener</Filter>
+    </ClCompile>
+    <ClCompile Include="listeners\GroupCallEventListener.cpp">
+      <Filter>GroupCall\GroupCallService\GroupCallEventListener</Filter>
+    </ClCompile>
+    <ClCompile Include="listeners\MyMediaStatusListener.cpp">
+      <Filter>common listener\MyMediaStatusListener</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\UiUtils.cpp">
+      <Filter>UI Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\VideoRender.cpp">
+      <Filter>VideoRender</Filter>
+    </ClCompile>
+    <ClCompile Include="models\GroupCallParticipantModel.cpp">
+      <Filter>GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallParticipantModel</Filter>
+    </ClCompile>
+    <ClCompile Include="models\GroupCallMyselfRepository.cpp">
+      <Filter>GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallMyselfRepository</Filter>
+    </ClCompile>
+    <ClCompile Include="models\GroupCallPeerRepository.cpp">
+      <Filter>GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallPeerRepository</Filter>
+    </ClCompile>
+    <ClCompile Include="models\GroupCallParticipantService.cpp">
+      <Filter>GroupCall\GroupCallParticipantService</Filter>
+    </ClCompile>
+    <ClCompile Include="listeners\GroupCallParticipantEventListener.cpp">
+      <Filter>GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\GroupCallParticipantListViewModel.cpp">
+      <Filter>GroupCall\GroupCallParticipantListViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="listeners\GroupCallPeerListUpdatedEventListener.cpp">
+      <Filter>GroupCall\GroupCallParticipantListViewModel\GroupCallPeerListUpdatedEventListener</Filter>
+    </ClCompile>
+    <ClCompile Include="listeners\PeerEventListener.cpp">
+      <Filter>GroupCall\GroupCallParticipantService\PeerEventListener</Filter>
+    </ClCompile>
+    <ClCompile Include="viewmodels\GroupCallParticipantViewModel.cpp">
+      <Filter>GroupCall\GroupCallParticipantViewModel</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\JwtDecoder.cpp">
+      <Filter>MainPage\JwtDecoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="..\planet-kit-windows\include\IPlanetKitCallEvent.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\IPlanetKitConferenceEvent.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\IPlanetKitResultHandler.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKit.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitAudioCommon.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitAudioDevice.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitAudioManager.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitAutoPtr.hpp">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCall.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCallEventParam.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCallStartMessage.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCameraController.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCameraInfo.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCcParam.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCommonSetSharedContent.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCommonTypes.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitCommonVideoStatus.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitConference.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitConferenceParam.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitConfiguration.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitContainer.hpp">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitContentShareInterface.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitDataSessionInterface.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitHoldStatus.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitMakeCallParam.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitManager.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitMyMediaStatus.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitOptional.hpp">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitPeer.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitPeerControl.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitPeerHold.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitScreenShareController.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitScreenShareInfo.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitSendVoiceProcessor.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitSharedContents.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitStatistics.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitString.hpp">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitSubGroupInterface.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitTypes.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitUserId.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitVerifyCallParam.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitVideoCommon.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitVideoController.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitVideoRender.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitVideoSource.hpp">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\planet-kit-windows\include\PlanetKitVideoStatus.h">
+      <Filter>PlanetKit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="models\CallService.h">
+      <Filter>Call\CallService</Filter>
+    </ClInclude>
+    <ClInclude Include="models\AudioDeviceService.h">
+      <Filter>Audio Device Control\AudioDeviceService</Filter>
+    </ClInclude>
+    <ClInclude Include="models\CameraDeviceService.h">
+      <Filter>Camera Device Control\CameraDeviceService</Filter>
+    </ClInclude>
+    <ClInclude Include="models\SettingService.h">
+      <Filter>MainPage\SettingService</Filter>
+    </ClInclude>
+    <ClInclude Include="models\GroupCallService.h">
+      <Filter>GroupCall\GroupCallService</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\AudioDeviceViewModel.h">
+      <Filter>Audio Device Control\AudioDeviceViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="models\CallMyMediaStatusService.h">
+      <Filter>Call\CallMyMediaStatusService</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\CallMyViewModel.h">
+      <Filter>Call\CallMyViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\CallPeerViewModel.h">
+      <Filter>Call\CallPeerViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\CallViewModel.h">
+      <Filter>Call\CallViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\VerifiedCallViewModel.h">
+      <Filter>Call\VerifiedCallViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\CameraDeviceViewModel.h">
+      <Filter>Camera Device Control\CameraDeviceViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\GroupCallCameraPreviewViewModel.h">
+      <Filter>GroupCall\GroupCallCameraPreview\GroupCallCameraPreviewViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\GroupCallRoomNameViewModel.h">
+      <Filter>GroupCall\Basic call\GroupCallRoomNameViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\GroupCallViewModel.h">
+      <Filter>GroupCall\Basic call\GroupCallViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\SettingViewModel.h">
+      <Filter>MainPage\SettingViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\MainWindowViewModel.h">
+      <Filter>MainWindow\MainWindowViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="structs\ServerInfoData.h">
+      <Filter>AppServerControl\ServerInfoData</Filter>
+    </ClInclude>
+    <ClInclude Include="structs\AppServerAPI.h">
+      <Filter>AppServerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="structs\AppServerController.h">
+      <Filter>AppServerControl</Filter>
+    </ClInclude>
+    <ClInclude Include="structs\AudioDevice.h">
+      <Filter>Audio Device Control\AudioDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="structs\CameraDevice.h">
+      <Filter>Camera Device Control\CameraDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="structs\UserInfo.h">
+      <Filter>MainPage\UserInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="listeners\AudioDeviceEventListener.h">
+      <Filter>Audio Device Control\AudioDeviceEventListener</Filter>
+    </ClInclude>
+    <ClInclude Include="listeners\CallEventListener.h">
+      <Filter>Call\CallService\CallEventListener</Filter>
+    </ClInclude>
+    <ClInclude Include="listeners\CameraDeviceListener.h">
+      <Filter>Camera Device Control\CameraDeviceListener</Filter>
+    </ClInclude>
+    <ClInclude Include="listeners\GroupCallEventListener.h">
+      <Filter>GroupCall\GroupCallService\GroupCallEventListener</Filter>
+    </ClInclude>
+    <ClInclude Include="listeners\MyMediaStatusListener.h">
+      <Filter>common listener\MyMediaStatusListener</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\UiUtils.h">
+      <Filter>UI Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\VideoRender.h">
+      <Filter>VideoRender</Filter>
+    </ClInclude>
+    <ClInclude Include="models\GroupCallParticipantModel.h">
+      <Filter>GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallParticipantModel</Filter>
+    </ClInclude>
+    <ClInclude Include="models\GroupCallMyselfRepository.h">
+      <Filter>GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallMyselfRepository</Filter>
+    </ClInclude>
+    <ClInclude Include="models\GroupCallPeerRepository.h">
+      <Filter>GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallPeerRepository</Filter>
+    </ClInclude>
+    <ClInclude Include="models\GroupCallParticipantService.h">
+      <Filter>GroupCall\GroupCallParticipantService</Filter>
+    </ClInclude>
+    <ClInclude Include="listeners\GroupCallParticipantEventListener.h">
+      <Filter>GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\GroupCallParticipantListViewModel.h">
+      <Filter>GroupCall\GroupCallParticipantListViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="listeners\GroupCallPeerListUpdatedEventListener.h">
+      <Filter>GroupCall\GroupCallParticipantListViewModel\GroupCallPeerListUpdatedEventListener</Filter>
+    </ClInclude>
+    <ClInclude Include="listeners\PeerEventListener.h">
+      <Filter>GroupCall\GroupCallParticipantService\PeerEventListener</Filter>
+    </ClInclude>
+    <ClInclude Include="viewmodels\GroupCallParticipantViewModel.h">
+      <Filter>GroupCall\GroupCallParticipantViewModel</Filter>
+    </ClInclude>
+    <ClInclude Include="constants\LinePlanetCallVersion.h">
+      <Filter>Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants\Constants.h">
+      <Filter>Constants</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\JwtDecoder.h">
+      <Filter>MainPage\JwtDecoder</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-100.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-400.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LinePlanet.ico">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\planet.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallTile.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\LargeTile.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-125.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-150.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{8ebfde62-5dd9-44fa-8e12-566748a666f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainPage">
+      <UniqueIdentifier>{0a3ea5e6-0a42-425c-a0f4-73dd434d57f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Utils">
+      <UniqueIdentifier>{0e9382a2-6810-4cd6-8d28-b997e3b38fcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings">
+      <UniqueIdentifier>{2add3c2d-c62a-4172-8ca2-c778659e1f4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings\ko-KR">
+      <UniqueIdentifier>{8ca4e7f4-ad6f-4d97-bc65-9741a19b369c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Strings\en-US">
+      <UniqueIdentifier>{f653c28c-6aea-47ce-86d8-19a44a991404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall">
+      <UniqueIdentifier>{80f966e2-2355-4f77-ab95-0c4ef0f9d278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\Basic call">
+      <UniqueIdentifier>{0c4fde04-e117-4adf-ae90-522ca7820ed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppServerControl">
+      <UniqueIdentifier>{a8892440-06e5-4930-bf57-9d56f3c51169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AppServerControl\ServerInfoData">
+      <UniqueIdentifier>{8e6ebca2-7b54-4619-9a43-6710b3c80ebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainPage\SettingService">
+      <UniqueIdentifier>{d008ba37-d3b8-407c-8f80-4195e1a7d998}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sample Resource">
+      <UniqueIdentifier>{281fb23c-268e-4372-afc9-c82fd2a287b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sample Resource\auth">
+      <UniqueIdentifier>{80a5f1c7-062d-4ba9-b3c8-8c505e0312df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sample Resource\waves">
+      <UniqueIdentifier>{86f1e595-da1c-4f74-9289-996050d7c515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlanetKit">
+      <UniqueIdentifier>{f5eef588-d430-4458-84f3-fcb234503784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlanetKit\include">
+      <UniqueIdentifier>{9f741ade-609a-4557-8d64-03f2d8bfd02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainPage\SettingViewModel">
+      <UniqueIdentifier>{569e6b0b-c60c-4436-9ddd-2a9e201b94a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow">
+      <UniqueIdentifier>{c6a9b0e5-b7b7-40a8-8cc0-77733af0463e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainWindow\MainWindowViewModel">
+      <UniqueIdentifier>{c17221b8-64fa-4f4e-8cfb-ff9562efaa64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainPage\UserInfo">
+      <UniqueIdentifier>{fc79f166-6094-4699-84f6-cd726fe74dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Device Control">
+      <UniqueIdentifier>{e6df804a-fd1c-4bb2-a104-7d28cbe6e6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Device Control\AudioDeviceService">
+      <UniqueIdentifier>{396707ce-ccbc-46a8-85e9-53f6cc03d604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Device Control\AudioDeviceEventListener">
+      <UniqueIdentifier>{baabc548-deb9-4c03-b9a1-6366bb893904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Device Control\AudioDevice">
+      <UniqueIdentifier>{b5cf0466-97a0-4bc6-a2cd-b698898b11de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio Device Control\AudioDeviceViewModel">
+      <UniqueIdentifier>{1384607b-922e-45b1-824a-3008d0cd1a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VideoRender">
+      <UniqueIdentifier>{89cfad00-186e-41c4-b4f8-648bdb39a273}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera Device Control">
+      <UniqueIdentifier>{ccd0ff0a-20a6-463b-aa1e-4e602a05f058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera Device Control\CameraDeviceService">
+      <UniqueIdentifier>{0a643e09-74ad-45e9-9f88-db0f7db8bdf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera Device Control\CameraDevice">
+      <UniqueIdentifier>{8721c2e4-9c68-4dc0-a692-90dfba709c18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera Device Control\CameraDeviceViewModel">
+      <UniqueIdentifier>{19ebcfe3-1f17-4af8-9f8b-fb85b3dc28c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera Device Control\CameraDeviceListener">
+      <UniqueIdentifier>{0e0df75c-da86-430b-af9b-c4a33c9c894d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call">
+      <UniqueIdentifier>{00920def-a97b-4ad1-9f17-8e7fa8482599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\Basic call">
+      <UniqueIdentifier>{1fa91681-336d-46fa-a97f-f325adefac85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\Basic call\AudioCall">
+      <UniqueIdentifier>{40b6f2b4-a82e-43c3-a60e-79656aa8bb49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\Basic call\VideoCall">
+      <UniqueIdentifier>{3a28814c-e834-4e2a-9c2a-cee3eed4d7b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\CallService">
+      <UniqueIdentifier>{671a7304-7928-4552-9766-8b75f6502821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\CallService\CallEventListener">
+      <UniqueIdentifier>{e32d160f-f654-4372-b147-2229bfe94738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\CallViewModel">
+      <UniqueIdentifier>{59205bad-0524-42c7-b671-2f0ed7b049d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\CallPeerViewModel">
+      <UniqueIdentifier>{35ba4113-22d4-4d2f-8cf6-a8df91911baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\CallMyViewModel">
+      <UniqueIdentifier>{9489a8ed-76e8-460e-92a2-0f7d85145e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\CallMyMediaStatusService">
+      <UniqueIdentifier>{c6f5c77e-5001-4a3a-a088-237506f18b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Call\VerifiedCallViewModel">
+      <UniqueIdentifier>{90271822-d46f-4636-86ac-ebf9c191ed3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\Basic call\GroupCallRoomNameViewModel">
+      <UniqueIdentifier>{994ba27f-a42f-4570-902b-7abc6d5f9a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallService">
+      <UniqueIdentifier>{8764d916-0e70-4532-9afe-aa83e4e4fcb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallService\GroupCallEventListener">
+      <UniqueIdentifier>{f609d5a1-942a-48e0-9d5d-9fc7da9804ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallCameraPreview">
+      <UniqueIdentifier>{dedcfc18-5780-4680-a7e4-1bce12578759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallCameraPreview\GroupCallCameraPreviewViewModel">
+      <UniqueIdentifier>{40624a34-9868-4b76-9dcc-77edc37005b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\Basic call\GroupCallViewModel">
+      <UniqueIdentifier>{229db34d-f46f-4343-93f4-6dbeae28c32c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Constants">
+      <UniqueIdentifier>{80ed8a82-fb7d-4972-8548-4c8952cb4f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantService">
+      <UniqueIdentifier>{d088f5a0-2fd9-4f71-b526-063bd35bf2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common listener">
+      <UniqueIdentifier>{5ecc6732-2611-4532-843e-8a00c292d500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common listener\MyMediaStatusListener">
+      <UniqueIdentifier>{bdabdc56-a816-4405-b6c4-75ade3a4d4fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener">
+      <UniqueIdentifier>{3c740ccf-ae73-4126-9793-a582a0a77d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallMyselfRepository">
+      <UniqueIdentifier>{5ebf84bf-e108-450a-beb7-0305ea9f7acc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallParticipantModel">
+      <UniqueIdentifier>{203f08ce-7edd-4aad-8755-f24fc12f24c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantService\GroupCallParticipantEventListener\GroupCallPeerRepository">
+      <UniqueIdentifier>{c81c88a8-0cfd-4bbb-add6-9500c8ec315c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantListViewModel">
+      <UniqueIdentifier>{de7d16fb-e0ea-49ee-9823-498ea8cba86f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantListViewModel\GroupCallPeerListUpdatedEventListener">
+      <UniqueIdentifier>{2836c473-0117-46c6-8551-a54e759f6b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantService\PeerEventListener">
+      <UniqueIdentifier>{6614de4a-d090-41ee-9b9d-c951700a37d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GroupCall\GroupCallParticipantViewModel">
+      <UniqueIdentifier>{02b2dde0-a19c-4ddd-9305-1a6c9f0081f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainPage\JwtDecoder">
+      <UniqueIdentifier>{5743505f-ae15-4678-90ae-0985ef2b30ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="resource\auth\cacert.pem">
+      <Filter>Sample Resource\auth</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)..\..\natvis\wil.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="String\ko-KR\Resources.resw">
+      <Filter>Strings\ko-KR</Filter>
+    </PRIResource>
+    <PRIResource Include="String\en-US\Resources.resw">
+      <Filter>Strings\en-US</Filter>
+    </PRIResource>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="../planet-kit-windows/bin/PlanetKit64.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="resource\wav_files\end_48k.wav">
+      <Filter>Sample Resource\waves</Filter>
+    </Media>
+    <Media Include="resource\wav_files\hold_48k.wav">
+      <Filter>Sample Resource\waves</Filter>
+    </Media>
+    <Media Include="resource\wav_files\ring_48k.wav">
+      <Filter>Sample Resource\waves</Filter>
+    </Media>
+    <Media Include="resource\wav_files\ringback_48k.wav">
+      <Filter>Sample Resource\waves</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
