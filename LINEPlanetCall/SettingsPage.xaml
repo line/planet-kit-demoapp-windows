@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Copyright 2024 LINE Plus Corporation
+
+LINE Plus Corporation licenses this file to you under the Apache License,
+version 2.0 (the "License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at:
+
+  https://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+-->
+<Page
+    x:Class="LINEPlanetCall.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LINEPlanetCall"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Width="492"
+    Height="620"
+    Style="{ThemeResource backgroundStyle}">
+    
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Width="492" Height="620">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75" />
+                <RowDefinition Height="108" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="490">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="40" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" BorderThickness="0" Click="clickBack" FocusVisualMargin="0">
+                        <SymbolIcon Symbol="Back" />
+                    </Button>
+                    <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold" Style="{ThemeResource textBlockStyle}" x:Uid="lp_demoapp_setting_title" />
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="490">
+                <StackPanel HorizontalAlignment="Center" Width="62" Height="62" Background="#DFE0FB" CornerRadius="31">
+                    <SymbolIcon Symbol="Contact" Foreground="White" Width="62" Height="62" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="2" HorizontalAlignment="Center" Width="450" Margin="10 0 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <RelativePanel Grid.Row="0">
+                        <TextBlock x:Name="textMyName" FontWeight="SemiBold" FontSize="15" Style="{ThemeResource textBlockStyle}" x:Uid="lp_demoapp_setting_name" />
+                        <TextBlock RelativePanel.RightOf="textMyName" FontSize="16" Margin="2 0 0 0" Foreground="Red" Text="*" />
+                    </RelativePanel>
+                    <StackPanel Grid.Row="1" Padding="0 4 0 0">
+                        <TextBox TabIndex="0" Text="{x:Bind Path=settingViewModel.name, Mode=TwoWay}" x:Uid="lp_demoapp_setting_placeholder1" MaxLength="10" IsEnabled="{x:Bind Path=settingViewModel.enableUserName, Mode=OneWay}" />
+                    </StackPanel>
+                    <TextBlock Grid.Row="2" TextWrapping="Wrap" Padding="0 6 0 0" FontSize="13" Foreground="#949494" x:Uid="lp_demoapp_setting_guide1" />
+                    <RelativePanel Grid.Row="3" Padding="0 15 0 0">
+                        <TextBlock x:Name="textMyUSerId" FontSize="15" FontWeight="SemiBold" Style="{ThemeResource textBlockStyle}" x:Uid="lp_demoapp_setting_myuserid" />
+                        <TextBlock RelativePanel.RightOf="textMyUSerId" FontSize="16" Margin="2 0 0 0" Foreground="Red" Text="*" />
+                    </RelativePanel>
+                    <StackPanel Grid.Row="4" Padding="0 4 0 0">
+                        <TextBox x:Name="textBoxUserId" TabIndex="1" Text="{x:Bind Path=settingViewModel.userId, Mode=TwoWay}" x:Uid="lp_demoapp_setting_placeholder2" MaxLength="64" TextChanging="userIdTextChanging" IsEnabled="{x:Bind Path=settingViewModel.enableUserId, Mode=OneWay}"/>
+                    </StackPanel>
+                    <TextBlock Grid.Row="5" TextWrapping="Wrap" Padding="0 6 0 0" FontSize="13" Foreground="#949494" x:Uid="lp_demoapp_setting_guide2" />
+                    <TextBlock Grid.Row="6" TextWrapping="Wrap" FontSize="13" Foreground="#E5172F" Text="{x:Bind Path=settingViewModel.expiredGuide, Mode=OneWay}" Padding="0 4 0 0" />
+                </Grid>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Width="490" Visibility="{x:Bind Path=settingViewModel.visibleRegister, Mode=OneWay}">
+                <Button HorizontalAlignment="Center" Width="446" Height="46" Style="{ThemeResource LineButtonStyle}" TabIndex="3" Click="clickSave">
+                    <Button.Resources>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White" />
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#1FC04F"/>
+
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White" />
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#06C755"/>
+                    </Button.Resources>
+                    <Grid Height="23">
+                        <TextBlock FontSize="17" FontWeight="SemiBold" x:Uid="lp_demoapp_setting_btn1" />
+                    </Grid>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Row="3" Width="490" Visibility="{x:Bind Path=settingViewModel.visibleReset, Mode=OneWay}">
+                <Button HorizontalAlignment="Center" Width="446" Height="46" Style="{ThemeResource LineRedButtonStyle}" TabIndex="3" Click="clickResetNow">
+                    <Button.Resources>
+                        <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="White" />
+                        <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#F31B35"/>
+
+                        <SolidColorBrush x:Key="ButtonForegroundPressed" Color="White" />
+                        <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#FF334B"/>
+                    </Button.Resources>
+                    <Grid Height="23">
+                        <TextBlock FontSize="17" FontWeight="SemiBold" x:Uid="lp_demoapp_setting_btn2" />
+                    </Grid>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Page>

@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LINEPlanetCall", "LINEPlanetCall.vcxproj", "{8EBFDE62-5DD9-44FA-8E12-566748A666F4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39D0AFFE-20DE-35E7-BC85-FAA83B26F1E1} = {39D0AFFE-20DE-35E7-BC85-FAA83B26F1E1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "yuv_common_objects", "..\libyuv-vs-project\yuv_common_objects.vcxproj", "{8C83F7F9-EB88-3B25-9889-9CECD20FB1D4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "yuv", "..\libyuv-vs-project\yuv.vcxproj", "{39D0AFFE-20DE-35E7-BC85-FAA83B26F1E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libyuv", "libyuv", "{9E99990F-7522-4AC8-A004-45CC8D8D4569}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EBFDE62-5DD9-44FA-8E12-566748A666F4}.Debug|x64.ActiveCfg = Debug|x64
+		{8EBFDE62-5DD9-44FA-8E12-566748A666F4}.Debug|x64.Build.0 = Debug|x64
+		{8EBFDE62-5DD9-44FA-8E12-566748A666F4}.Debug|x64.Deploy.0 = Debug|x64
+		{8EBFDE62-5DD9-44FA-8E12-566748A666F4}.Release|x64.ActiveCfg = Release|x64
+		{8EBFDE62-5DD9-44FA-8E12-566748A666F4}.Release|x64.Build.0 = Release|x64
+		{8EBFDE62-5DD9-44FA-8E12-566748A666F4}.Release|x64.Deploy.0 = Release|x64
+		{8C83F7F9-EB88-3B25-9889-9CECD20FB1D4}.Debug|x64.ActiveCfg = Debug|x64
+		{8C83F7F9-EB88-3B25-9889-9CECD20FB1D4}.Debug|x64.Build.0 = Debug|x64
+		{8C83F7F9-EB88-3B25-9889-9CECD20FB1D4}.Release|x64.ActiveCfg = Release|x64
+		{8C83F7F9-EB88-3B25-9889-9CECD20FB1D4}.Release|x64.Build.0 = Release|x64
+		{39D0AFFE-20DE-35E7-BC85-FAA83B26F1E1}.Debug|x64.ActiveCfg = Debug|x64
+		{39D0AFFE-20DE-35E7-BC85-FAA83B26F1E1}.Debug|x64.Build.0 = Debug|x64
+		{39D0AFFE-20DE-35E7-BC85-FAA83B26F1E1}.Release|x64.ActiveCfg = Release|x64
+		{39D0AFFE-20DE-35E7-BC85-FAA83B26F1E1}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8C83F7F9-EB88-3B25-9889-9CECD20FB1D4} = {9E99990F-7522-4AC8-A004-45CC8D8D4569}
+		{39D0AFFE-20DE-35E7-BC85-FAA83B26F1E1} = {9E99990F-7522-4AC8-A004-45CC8D8D4569}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E3D184E-365A-448F-AB07-DDFB7DCEACFB}
+	EndGlobalSection
+EndGlobal
